@@ -1,8 +1,10 @@
+#创建命令
 lin  create  lin-demo
 
-lin  --help  查看使用帮助
-lin  --version | -v  查看工具版本
-lin  init  <project-name>  基于指定的模板进行项目初始化
+<p>lin  --help  查看使用帮助</p>
+<p>lin  --version | -v  查看工具版本</p>
+<p>lin  create  <project-name>  基于指定的模板进行项目初始化</p>
+
 
 1、初始化项目 npm init -y
 
