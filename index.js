@@ -22,6 +22,8 @@ const chalk = require('chalk');
 
 const fs = require('fs');
 
+const path = require('path');
+
 // 1、获取用户输入的命令
 // 原生获取命令行
 // console.log(process.argv)
@@ -29,8 +31,10 @@ const fs = require('fs');
 // 模板
 // zaigithub上用https方式下载
 const downloadUrl = 'direct:https://github.com/c10342/react-multipage-template.git';
+const packageStr = fs.readFileSync(path.join(__dirname,'./package.json'),'utf-8');
+const version = JSON.parse(packageStr).version;
 program
-    .version('0.1.1', '-v, --version');
+    .version(version, '-v, --version');
 
 program
     .command('create <project>')
